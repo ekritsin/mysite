@@ -1,0 +1,30 @@
+* {
+   margin: 0;
+   padding: 0;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+html body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   position: relative;
+   min-height: 100vh;
+   font-family: Hack, monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+   margin: 0;
+}
+
+a {
+   color: inherit;
+}

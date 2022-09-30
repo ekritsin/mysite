@@ -1,0 +1,56 @@
+.section {
+   margin: 0 auto;
+   width: 100%;
+   padding: 50px;
+   height: 280px;
+   text-align: center;
+}
+
+.section:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+.whoami {
+   background-image: url("../images/pexels-fauxels-3183152.jpg");
+   background-size: cover;
+   background-position:center;
+   margin-top: 4.6em;
+   margin-left: 0em;
+   margin-right: 0em;
+   margin-bottom: 0em;
+}
+
+.column {
+   float: left;
+   width: 50%;
+   padding: 10px;
+
+ }
+ 
+
+.column p {
+   margin-top: 2em;
+   margin-left: 2em;
+   font-size: xx-large;
+}
+
+.column img {
+   height: 25em;
+   width: 16em;
+}
+
+@media screen and (max-width: 600px) {
+   .column {
+      width: 100%;
+   }
+
+   .column img {
+      height: 19em;
+      width: 12em;
+      margin-left: 3em;
+   }
+
+
+}
