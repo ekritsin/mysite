@@ -1,7 +1,7 @@
 .item {
    width: 100%;
-   padding: 50px;
-   height: 280px;
+   padding: 40px;
+   height: var(--sectionsize);
    text-align: center;
    background-color: #ecf0f1;
    border-bottom: 1px solid #ccc;
@@ -21,16 +21,39 @@
    width: 1044px;
 }
 
-.skills {
+
+.skills::before {
    background-image: url(../../images/pexels-fauxels-3184292.jpg);
    background-size: cover;
    background-position: center;
-
+   opacity: 0.4;
+   content: "";
+   z-index: -1;
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
 }
 
-img.icon{
+.skills {
+   z-index: 1;
+   position: relative;
+}
+
+.format-skill {
+   margin-bottom: 4em;
+}
+
+img.icon {
    height: 100px;
    width: 100px;
+}
+
+img.icon:hover {
+   border-radius: 15px;
+   padding: 6px;
+   background-color: hsl(234, 100%, 76%, 0.605);
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -38,11 +61,13 @@ img.icon{
    float: left;
    width: 33.33%;
    padding: 5px;
- }
- 
- /* Clear floats after image containers */
- .row::after {
+}
+
+
+/* Clear floats after image containers */
+.row::after {
    content: "";
    clear: both;
    display: table;
- }
+}
+
